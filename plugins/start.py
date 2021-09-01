@@ -14,5 +14,4 @@ async def start(client, message):
       ]
     ])
     welcomed = f"<b> Hey {message.from_user.first_name} , \n\nI'm YouTube DL Bot. I can download video or audio f\n rom Youtube. \n\nMade by @SLBotsOfficial 🇱🇰/help for More info </b>"
-    await message.reply_text(welcomed, reply_markup=joinButton)
-    raise StopPropagatio
+    await message.reply_text(welcomed, reply_markup=InlineKeyboardButton)
