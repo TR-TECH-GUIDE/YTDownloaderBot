@@ -4,7 +4,7 @@ from pyrogram import Client, Filters,InlineKeyboardButton
 @Client.on_message(Filters.command(["help"]))
 async def start(client, message):
     # return
-    JoinButton = InlineKeyboardMarkup([
+    joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("Updates Channel", url="https://t.me/SLBotsOfficial")
       ],
       [ 
@@ -13,4 +13,4 @@ async def start(client, message):
       ]
     ])  
     helptxt = f"<b> Just send a Youtube url to download it in video or audio format!</b>"
-    await message.reply_text(helptxt, reply_markup=JoinButton)
+    await message.reply_text(helptxt, reply_markup=joinButton)
