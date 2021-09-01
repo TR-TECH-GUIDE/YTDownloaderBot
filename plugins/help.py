@@ -7,8 +7,10 @@ async def start(client, message):
     JoinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("Updates Channel", url="https://t.me/SLBotsOfficial")
       ],
-        [InlineKeyboardButton(
-            "Support Group", url="https://t.me/trtechguide")]
+      [ 
+        InlineKeyboardButton(
+            "Support Group", url="https://t.me/trtechguide")
+      ]
     ])  
     helptxt = f"<b> Just send a Youtube url to download it in video or audio format!</b>"
     await message.reply_text(helptxt, reply_markup=JoinButton)
